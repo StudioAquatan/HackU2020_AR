@@ -1,4 +1,6 @@
 .idea
-motion
-model_obj
-pattern
+model_obj/Alicia
+model_obj/FML3
+pattern/fight.patt
+pattern/icon.patt
+pattern/pattern.patt

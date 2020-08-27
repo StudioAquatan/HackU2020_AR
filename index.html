@@ -3,7 +3,7 @@
 <!-- A-Frame ライブラリの読み込み -->
 <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
 <!-- AR.js ライブラリの読み込み -->
-<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
 
 <!-- a-mmd ライブラリの読み込み -->
 <script src="https://cdn.rawgit.com/kripken/ammo.js/dcab07bf0e7f2b4b64c01dc45da846344c8f50be/builds/ammo.js"></script>
@@ -19,10 +19,17 @@
 
     <!-- マーカー上になにを展開するかを書く -->
     <!-- マーカーの読み取り結果 -->
-    <a-marker preset="hiro">
+    <a-marker type='pattern' url='./pattern/negative.patt'>
         <a-entity mmd="">
             <a-entity rotation="-90 0 0" position="0 0 0" scale="0.1 0.1 0.1"
-                      mmd-model="model:./path/to/.pmx file; vmd:./path/to/.vmd file; physics:false; blink:true;"></a-entity> <!-- vmd:./MMDMotion/31.vmd; -->
+                      mmd-model="model:./model_obj/FML4/FML4.pmx; vmd:./motion/zoi/zoi1.vmd; physics:false; blink:true;"></a-entity> <!-- vmd:./MMDMotion/31.vmd; -->
+        </a-entity>
+    </a-marker>
+
+    <a-marker type='pattern' url='./pattern/positive.patt'>
+        <a-entity mmd="">
+            <a-entity rotation="-90 0 0" position="0 0 0" scale="0.1 0.1 0.1"
+                      mmd-model="model:./model_obj/FML2/FML2.pmx; vmd:./motion/zoi/zoi1.vmd; physics:false; blink:true;"></a-entity> <!-- vmd:./MMDMotion/31.vmd; -->
         </a-entity>
     </a-marker>
     <!-- カメラを追加 -->
