@@ -8,3 +8,7 @@
 既に実装されているものを参考に`a-marker`属性を追記する．
 
 3Dモデルは`.pmx`ファイルのものを使用する．
+
+## 関連リポジトリ
+- [hacku2020](https://github.com/StudioAquatan/hacku2020)
+- [hacku2020_m5stack](https://github.com/StudioAquatan/hacku2020_m5stack)
